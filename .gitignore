@@ -1,0 +1,63 @@
+# =========================
+# Java
+# =========================
+*.class
+*.jar
+*.war
+*.ear
+*.jmod
+hs_err_pid*
+
+# =========================
+# Build output
+# =========================
+/target/
+/out/
+/build/
+/bin/
+
+# =========================
+# Gradle
+# =========================
+.gradle/
+!gradle/wrapper/gradle-wrapper.jar
+
+# =========================
+# Maven
+# =========================
+.mvn/wrapper/maven-wrapper.jar
+
+# =========================
+# IDEs
+# =========================
+
+## VS Code
+.vscode/
+!.vscode/extensions.json
+
+## IntelliJ IDEA
+.idea/
+*.iml
+
+## Eclipse
+.project
+.classpath
+.settings/
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Environment files
+# =========================
+.env
+.env.*
+
