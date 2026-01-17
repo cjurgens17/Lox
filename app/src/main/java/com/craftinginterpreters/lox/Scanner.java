@@ -140,11 +140,11 @@ class Scanner {
                     while (peek() != '\n' && !isAtEnd()) {
                         advance();
                     }
-                } else if(match('*')){
-                  //Block Comments go until */
-                  while(!isAtEnd() && !(peek() == '/' && peekNext() == '*')){
-                    advance();
-                  }
+                } else if (match('*')) {
+                    //Block Comments go until */
+                    while (!isAtEnd() && !(peek() == '/' && peekNext() == '*')) {
+                        advance();
+                    }
                 } else {
                     addToken(SLASH);
                 }
@@ -246,13 +246,6 @@ class Scanner {
         return source.charAt(current);
     }
 
-    private char peekPrevious(){
-      if(current - 1 < 0){
-        return '\0';
-      }
-      return source.charAt(current - 1);
-    }
-
     private char peekNext() {
         if (current + 1 >= source.length()) {
             return '\0';
@@ -278,8 +271,8 @@ class Scanner {
         return current >= source.length();
     }
 
-    private boolean isStar(){
-      return source.charAt(current) == '*';
+    private boolean isStar() {
+        return source.charAt(current) == '*';
     }
 
     private char advance() {
