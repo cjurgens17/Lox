@@ -271,10 +271,6 @@ class Scanner {
         return current >= source.length();
     }
 
-    private boolean isStar() {
-        return source.charAt(current) == '*';
-    }
-
     private char advance() {
         return source.charAt(current++);
     }
