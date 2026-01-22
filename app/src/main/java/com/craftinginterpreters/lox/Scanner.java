@@ -184,7 +184,6 @@ class Scanner {
             type = IDENTIFIER;
         }
         addToken(type);
-
     }
 
     private void number() {
